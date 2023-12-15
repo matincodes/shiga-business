@@ -1,0 +1,7 @@
+.transactions a{
+    @apply flex items-center text-sm font-normal text-gray-700;
+}
+
+.transactions a svg{
+    @apply mr-2
+}

@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* @import "./assets/fonts/Platform-Medium.ttf";
+@import "./assets/fonts/platform-medium-webfont.woff";
+@import "./assets/fonts/platform-medium-webfont.woff2";
+
+@import "./assets/fonts/ShigaWeb-Bold.otf";
+@import "./assets/fonts/shigaweb-bold-webfont.woff";
+@import "./assets/fonts/shigaweb-bold-webfont.woff2";
+
+@import "./assets/fonts/ShigaWeb-Heavy.otf";
+@import "./assets/fonts/shigaweb-heavy-webfont.woff";
+@import "./assets/fonts/shigaweb-heavy-webfont.woff2";
+
+@import "./assets/fonts/ShigaWeb-Medium.otf";
+@import "./assets/fonts/shigaweb-medium-webfont.woff";
+@import "./assets/fonts/shigaweb-medium-webfont.woff2";
+
+@import "./assets/fonts/ShigaWeb-Regular.otf";
+@import "./assets/fonts/shigaweb-regular-webfont.woff";
+@import "./assets/fonts/shigaweb-regular-webfont.woff2"; */
+
+
+/* Platform Medium */
+@font-face {
+  font-family: 'Platform';
+  src: url('./assets/fonts/Platform-Medium.ttf') format('truetype'),
+       url('./assets/fonts/platform-medium-webfont.woff2') format('woff2'),
+       url('./assets/fonts/platform-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+/* ShigaWeb Bold */
+@font-face {
+  font-family: 'ShigaWeb';
+  src: url('./assets/fonts/ShigaWeb-Bold.otf') format('opentype'), 
+       url('./assets/fonts/shigaweb-bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/shigaweb-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ShigaWeb Heavy */
+@font-face {
+  font-family: 'ShigaWeb';
+  src: url('./assets/fonts/ShigaWeb-Heavy.otf') format('opentype'),
+       url('./assets/fonts/shigaweb-heavy-webfont.woff2') format('woff2'),
+       url('./assets/fonts/shigaweb-heavy-webfont.woff') format('woff');
+  font-weight: 900; 
+  font-style: normal;
+}
+
+/* ShigaWeb Medium */
+@font-face {
+  font-family: 'ShigaWeb';
+  src: url('./assets/fonts/ShigaWeb-Medium.otf') format('opentype'),
+       url('./assets/fonts/shigaweb-medium-webfont.woff2') format('woff2'),
+       url('./assets/fonts/shigaweb-medium-webfont.woff') format('woff');
+  font-weight: 500; 
+  font-style: normal;
+}
+
+/* ShigaWeb Regular */
+@font-face {
+  font-family: 'ShigaWeb';
+  src: url('./assets/fonts/ShigaWeb-Regular.otf') format('opentype'),
+       url('./assets/fonts/shigaweb-regular-webfont.woff2') format('woff2'),
+       url('./assets/fonts/shigaweb-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+h2{
+  @apply text-3xl my-2 font-bold;
+}
+
+button{
+  @apply bg-zinc-800 w-full text-white text-center rounded-md py-2 my-3
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+textarea{
+  @apply  w-full border-2 rounded-md py-3 px-4 my-2 outline-none;
+}
+
+.link{
+  @apply mr-4 text-neutral-400 border-t-2 pt-2;
+}
+
+label{
+  @apply block w-full py-3;
 }
