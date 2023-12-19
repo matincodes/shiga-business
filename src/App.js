@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Business from './components/business-activation/business/business';
-import Payment from './components/payments/payment/payment';
+// import Payment from './components/payments/payment/payment';
 import Dashboard from './components/dashboard/dashboard';
 import Login from './routes/login/login';
 import OnboardPageOne from './routes/onboarding/onboard-pageone';
 import OnboardPageTwo from './routes/onboarding/onboard-pagetwo';
 import OnboardPageThree from './routes/onboarding/onboard-three/onboard-pagethree';
-import TransNav from './routes/trans-nav/trans-nav';  
+// import TransNav from './routes/trans-nav/trans-nav';  
 
 function App() {
   return (

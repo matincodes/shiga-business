@@ -9,9 +9,9 @@ const PaymentMethods = () => {
     setCardsEnabled(!cardsEnabled);
   };
 
-  const handleToggleBankTransfers = () => {
-    setBankTransfersEnabled(!bankTransfersEnabled);
-  };
+//   const handleToggleBankTransfers = () => {
+//     setBankTransfersEnabled(!bankTransfersEnabled);
+//   };
 
     return ( 
         <div className="w-full">

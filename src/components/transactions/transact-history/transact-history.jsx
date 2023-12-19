@@ -3,7 +3,7 @@ import TransactHead from "../transact-head/transact-head";
 import "./transact-history.css";
 
 const TransactHistory = () => {
-    const [transactions, setTransactions] = useState([
+    const [transactions] = useState([
         {
           img: "../../../assets/loading.png",
           narration: 'Oluwatobi Oseni',
