@@ -3,7 +3,7 @@ import Switch from "../../switch/switch";
 
 const PaymentMethods = () => {
     const [cardsEnabled, setCardsEnabled] = useState(false);
-  const [bankTransfersEnabled, setBankTransfersEnabled] = useState(false);
+//   const [bankTransfersEnabled, setBankTransfersEnabled] = useState(false);
 
   const handleToggleCards = () => {
     setCardsEnabled(!cardsEnabled);
