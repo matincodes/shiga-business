@@ -6,13 +6,13 @@ import Switch from "../../components/switch/switch";
 const TransNav = () => {
     return ( 
         <div className="flex">
-            <div className="transactions flex flex-col items-start justify-between h-screen w- fit bg-neutral-100 border-r border-gray-200">
+            <div className="transactions font-[ShigaWeb] flex flex-col items-start justify-between h-screen w-fit pr-4 bg-neutral-100 border-r border-gray-200">
                 <div>
                     <div className="flex flex-row justify-between items-center py-4 pb-9 pr-2">
                         <img src={Avatar} alt="Avatar"  className="px-3"/>
                         <div>
-                            <p className="text-sm">ID: 09387465</p>
-                            <h2 className="text-lg font-medium">JD Mobinn Limited</h2>
+                            <p className="text-xs">ID: 09387465</p>
+                            <h2 className="text-sm font-medium">JD Mobinn Limited</h2>
                         </div>
                     </div>
                     <ul className="flex flex-col pl-9">
@@ -85,10 +85,10 @@ const TransNav = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="mb-10">
+                <div className="mb-5">
                     <ul className="flex flex-col pl-9">
-                        <li className="flex items-center justify-between py-3">
-                            <div className="flex items-center text-sm font-normal text-gray-700">
+                        <li className="flex items-center justify-between py-2">
+                            <div className="flex items-center text-xs font-normal text-gray-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" className="mr-2">
                                     <path d="M8.63298 5.69605C6.24357 4.99084 3.18767 5.74583 1.60303 8.78514L5.52868 10.9561" stroke="#343433" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M14.3123 11.3662C15.0175 13.7556 14.25 16.8101 11.2149 18.4003L9.04395 14.4733" stroke="#343433" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -103,7 +103,7 @@ const TransNav = () => {
                                 <Switch />
                             </div>
                         </li>
-                        <li className="py-3">
+                        <li className="py-2">
                             <Link to='/developers'>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
                                     <path d="M12.919 1.2373H14.7821C15.8796 1.2373 16.7694 2.12705 16.7694 3.22461V6.95081L18.1441 8.36853C18.4854 8.7205 18.4854 9.27994 18.1441 9.63192L16.7694 11.0496V14.7758C16.7694 15.8734 15.8796 16.7631 14.7821 16.7631H12.919M7.08124 1.2373H5.21814C4.12058 1.2373 3.23083 2.12705 3.23083 3.22461V6.95081L1.85608 8.36853C1.51477 8.7205 1.51477 9.27994 1.85608 9.63192L3.23083 11.0496V14.7758C3.23083 15.8734 4.12058 16.7631 5.21814 16.7631H7.08124" stroke="#343433" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -111,7 +111,7 @@ const TransNav = () => {
                                 For Developers
                             </Link>
                         </li>
-                        <li className="py-3">
+                        <li className="py-2">
                             <Link to="/contact-us" className="text-base font-medium text-gray-70">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M10.0701 18.2532C14.8506 18.2532 18.4468 14.4924 18.4468 9.85322C18.4468 5.21403 14.8506 1.60059 10.0701 1.60059C5.2895 1.60059 1.69332 5.21403 1.69332 9.85322C1.69332 11.4754 2.13301 12.9901 2.90927 14.2743L1.55371 18.4006L6.44014 17.4577C7.52669 17.968 8.75346 18.2532 10.0701 18.2532Z" fill="black" fill-opacity="0.06"/>
@@ -124,7 +124,7 @@ const TransNav = () => {
                 </div>
             </div>
             <div className="w-full h-screen">
-                <div className="flex flex-row justify-between items-center h-10 p-8 border-b border-gray-200">
+                <div className="flex flex-row justify-between items-center h-10 p-7 border-b border-gray-200">
                     <h4 className="font-bold text-xl">Transactions</h4>
                     <div className="flex">
                         <div className="flex justify-center items-center bg-indigo-50 rounded-3xl py-1 px-3 mr-3">

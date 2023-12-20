@@ -7,8 +7,6 @@ import MakeTransfer from "../make-transfer/make-transfer";
 import BusinessForm from "../business-account/business-form/buisness-form";
 import CreateCard from "../cards/create-card/create-card";
 import Card from "../cards/card/card";
-import CreatePaymentLink from "../payments/create-payment-link/create-payment-link";
-import PaymentDetails from "../payments/payment-details/payment-details";
 import ShigaTransfer from "../shiga-transaction/shiga-transfer/shiga-transfer";
 import AllSettings from "../shiga-settings/all-settings/all-settings";
 import Bills from "../manage-bills/bills/bills";
@@ -32,6 +30,8 @@ const Dashboard = () => {
                 <Route path="payments" element={<Payment/>} />
                 <Route path="payments/create-link" element={<Payment/>} />
                 <Route path="payments/payment-details" element={<Payment/>} />
+                <Route path="payments/view-payment" element={<Payment/>} />
+                <Route path="payments/view-payment-with-list" element={<Payment/>} />
                 <Route path="shiga-transfer/recipient" element={<ShigaTransfer/>} />
                 <Route path="shiga-transfer/amount" element={<ShigaTransfer/>} />
                 <Route path="shiga-transfer/review&pay" element={<ShigaTransfer/>} />

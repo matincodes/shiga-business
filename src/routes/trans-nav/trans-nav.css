@@ -1,5 +1,5 @@
 .transactions a{
-    @apply flex items-center text-sm font-normal text-gray-700;
+    @apply flex items-center text-xs font-bold text-gray-700;
 }
 
 .transactions a svg{

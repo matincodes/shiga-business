@@ -1,9 +1,8 @@
-import { useState } from "react";
 import TransactHead from "../transact-head/transact-head";
 import "./transact-history.css";
 
 const TransactHistory = () => {
-    const [transactions, setTransactions] = useState([
+    const transactions = [
         {
           img: "../../../assets/loading.png",
           narration: 'Oluwatobi Oseni',
@@ -13,7 +12,7 @@ const TransactHistory = () => {
           date: 'Nov 23, 2023',
         },
         {
-            img: "../../../assets/sent.png",
+          img: "../../../assets/sent.png",
           narration: 'Oluwatobi Oseni',
           amount: '500 NGN',
           type: 'Bank Transfer',
@@ -68,7 +67,7 @@ const TransactHistory = () => {
           reference: 'clp188ptj000...',
           date: 'Nov 23, 2023',
         },
-      ]);
+      ];
 
     return ( 
         <div>

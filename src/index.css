@@ -4,27 +4,6 @@
 
 
 
-/* @import "./assets/fonts/Platform-Medium.ttf";
-@import "./assets/fonts/platform-medium-webfont.woff";
-@import "./assets/fonts/platform-medium-webfont.woff2";
-
-@import "./assets/fonts/ShigaWeb-Bold.otf";
-@import "./assets/fonts/shigaweb-bold-webfont.woff";
-@import "./assets/fonts/shigaweb-bold-webfont.woff2";
-
-@import "./assets/fonts/ShigaWeb-Heavy.otf";
-@import "./assets/fonts/shigaweb-heavy-webfont.woff";
-@import "./assets/fonts/shigaweb-heavy-webfont.woff2";
-
-@import "./assets/fonts/ShigaWeb-Medium.otf";
-@import "./assets/fonts/shigaweb-medium-webfont.woff";
-@import "./assets/fonts/shigaweb-medium-webfont.woff2";
-
-@import "./assets/fonts/ShigaWeb-Regular.otf";
-@import "./assets/fonts/shigaweb-regular-webfont.woff";
-@import "./assets/fonts/shigaweb-regular-webfont.woff2"; */
-
-
 /* Platform Medium */
 @font-face {
   font-family: 'Platform';
@@ -78,19 +57,20 @@
 
 
 h2{
-  @apply text-3xl my-2 font-bold;
+  @apply text-3xl my-1 font-medium font-[Platform] tracking-wide;
 }
 
 button{
-  @apply bg-zinc-800 w-full text-white text-center rounded-md py-2 my-3
+  @apply bg-[#343433] w-full text-white text-sm text-center rounded-lg py-2 my-3
 }
 
 input[type=text],
 input[type=number],
 input[type=password],
 input[type=email],
+input[type=tel],
 textarea{
-  @apply  w-full border-2 rounded-md py-3 px-4 my-2 outline-none;
+  @apply  w-full border-2 rounded-md p-2 my-2 text-sm placeholder:text-[#CCCCCC] outline-none;
 }
 
 .link{
@@ -98,5 +78,9 @@ textarea{
 }
 
 label{
-  @apply block w-full py-3;
+  @apply block w-full pt-1 text-xs;
+}
+
+.set-up ul li{
+  @apply text-[10px] text-[#99999C] py-1;
 }

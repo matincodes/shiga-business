@@ -1,20 +1,21 @@
 import InfoNav from "../../../routes/info-nav/info-nav";
-import BusinessInfo from "../business-info/business-info";
-import { useLocation } from "react-router-dom";
-import VerifyBusiness from "../verify-business/verify-business";
-import OwnersInfo from "../owners-info/owners-info";
-import DirectorsInfo from "../directors-info/directors-info";
+import SmallShigaLogo from "../../../assets/small-shiga-logo.png";
+import Close from "../../../assets/close.png";
 
 const Business = () => {
-    const location = useLocation();
 
     return ( 
-        <div>
-            <InfoNav path="make-a-transfer"/>
-            {location.pathname.includes('business-info') && <BusinessInfo />}   
-            {location.pathname.includes('verify-business') && <VerifyBusiness />}  
-            {location.pathname.includes('owners-info') && <OwnersInfo />}  
-            {location.pathname.includes('directors-info') && <DirectorsInfo />}  
+        <div className="flex flex-col w-screen h-screen">
+            <div className="w-full h-16 flex justify-between items-center border-b px-3">
+                <div className="flex items-center">
+                    <img src={SmallShigaLogo} alt="Shiga Logo" className="w-9 h-5 px-2 border-r-2 "/>
+                    <p className="text-normal font-[ShigaWeb] text-[#99999C] px-2">Business Verification</p>
+                </div>  
+                <div>
+                    <img src={Close} alt="Close" />
+                </div>
+            </div>
+            <InfoNav/>
         </div>
      );
 }

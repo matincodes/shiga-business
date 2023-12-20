@@ -6,7 +6,7 @@ const ShigaTransfer = () => {
     return ( 
         <div>
             <TransferNav path="shiga-transfer"/>
-            {}
+            {location.pathname.includes()}
         </div>
      );
 }

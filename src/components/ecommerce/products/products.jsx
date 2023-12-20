@@ -17,6 +17,7 @@ const Products = () => {
                         loading="lazy"
                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/c21d179dc11aa30966d80f27502be5a2ee371525477d8c30b6c9008ebb3cf534?"
                         className="aspect-[1.91] object-contain object-center w-[326px] stroke-[0.966px] stroke-black overflow-hidden max-w-full"
+                        alt=""
                         />
                     </div>
                     <div className="self-center text-zinc-800 text-center text-2xl font-medium max-w-[371px] mt-8">
