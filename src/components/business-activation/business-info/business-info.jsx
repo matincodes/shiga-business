@@ -1,8 +1,8 @@
 import "./business-info.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const BusinessInfo = () => {
-    const naviagate = useNavigate();
+    // const naviagate = useNavigate();
     
     const handleButton = () => {
 
