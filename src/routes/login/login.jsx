@@ -3,6 +3,9 @@ import { ReactComponent as Shiga } from "../../assets/shiga-logo.svg";
 
 const Login = () => {
 
+    const terms = "https://payshiga.notion.site/PAYSHIGA-TERMS-OF-USE-c14e881663ec40c7875e61ff0eebc40b?pvs=4";
+    const privacy = "https://payshiga.notion.site/PAYSHIGA-PRIVACY-POLICY-6165bd6474ad4297a2227a0f7c061a7b?pvs=4";
+
     const contactSupport = () => {
         window.location.href = "mailto:business@payshiga.com"
     }
@@ -42,7 +45,7 @@ const Login = () => {
                     <h2 className="">Login to your account</h2>
                     <p className="text-xs text-[#99999C]">
                         New to shiga business? 
-                        <Link  className="text-blue-600"> Create an Account</Link>
+                        <Link to="/onboarding-one" className="text-blue-600"> Create an Account</Link>
                     </p>
                 </div>
                 <form className=" w-1/4 pl-10">
@@ -70,7 +73,9 @@ const Login = () => {
                 </form>
             </div>
             <footer className="flex flex-col items-center text-sm pb-10">
-                <p>Terms of Service・Privacy Policy</p>
+                <p>
+                    <Link to={terms}>Terms of Service</Link>・<Link to={privacy}>Privacy Policy</Link> 
+                </p>
                 <p className="text-[#99999C]">© 2024 Payshiga Technologies.</p>
             </footer>
         </div>
