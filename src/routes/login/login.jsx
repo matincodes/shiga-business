@@ -44,7 +44,7 @@ const Login = () => {
                 <div className="mb-5">
                     <h2 className="">Login to your account</h2>
                     <p className="text-xs text-[#99999C]">
-                        New to shiga business? 
+                        New to Shiga Business? 
                         <Link to="/onboarding-one" className="text-blue-600"> Create an Account</Link>
                     </p>
                 </div>
