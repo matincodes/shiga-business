@@ -1,0 +1,3 @@
+select{
+    @apply  w-full border-2 rounded-md p-2 my-2 text-sm text-[#CCCCCC] outline-none;
+} 

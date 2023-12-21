@@ -1,0 +1,5 @@
+
+.info-nav .link{
+    @apply mr-4 text-neutral-400 border-t-2 pt-2;
+}
+
