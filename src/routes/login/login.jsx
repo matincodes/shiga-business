@@ -66,7 +66,7 @@ const Login = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                 <path d="M6.05364 6.44141C9.60149 4.80394 5.77469 1.6993 4.47391 4.31586M6.05364 8.67299V8.67857M11.3 6.00078C11.3 3.07367 8.92706 0.700781 5.99995 0.700781C3.07284 0.700781 0.699951 3.07367 0.699951 6.00078C0.699951 8.92789 3.07284 11.3008 5.99995 11.3008C8.92706 11.3008 11.3 8.92789 11.3 6.00078Z" stroke="#99999C" stroke-width="1.4" stroke-linecap="round"/>
                             </svg>
-                            I forgot my Password
+                            <span className="px-1">I forgot my Password</span>  
                          </p>
                     </div>
                     <button className="text-sm">Log in</button>
