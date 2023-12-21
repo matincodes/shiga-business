@@ -4,7 +4,7 @@ import OwnersInfo from "../../components/business-activation/owners-info/owners-
 import ReviewAndFinish from "../../components/business-activation/review-and-finish/review-and-finish";
 import VerifyBusiness from "../../components/business-activation/verify-business/verify-business";
 import "./info-nav.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const InfoNav = () => {
@@ -17,15 +17,20 @@ const InfoNav = () => {
         'Review & Finish',
       ];
 
-    const [currentPage, setCurrentPage] = useState(0);
+      const [currentPage, setCurrentPage] = useState(parseInt(localStorage.getItem('currentPage'), 10) || 0);
 
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
+      useEffect(() => {
+        // Save the current page to localStorage whenever it changes
+        localStorage.setItem('currentPage', currentPage.toString());
+      },[currentPage]);
 
-  const calculateProgress = () => {
-    return ((currentPage + 1) / formPages.length) * 100;
-  };
+        const handlePageChange = (pageNumber) => {
+            setCurrentPage(pageNumber);
+        };
+
+        const calculateProgress = () => {
+            return ((currentPage + 1) / formPages.length) * 100;
+        };
 
   return (
     <div className="flex h-full font=[ShigaWeb]">
@@ -59,7 +64,7 @@ const InfoNav = () => {
             {currentPage === 1 && <VerifyBusiness/>}
             {currentPage === 2 && <OwnersInfo />}
             {currentPage === 3 && <DirectorsInfo />}
-            {currentPage === 4 && <ReviewAndFinish />}
+            {currentPage === 4 && <ReviewAndFinish onPageChange={handlePageChange} />}
         </div>
     </div>
   );

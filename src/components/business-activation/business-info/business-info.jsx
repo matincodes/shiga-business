@@ -19,11 +19,13 @@ const BusinessInfo = () => {
             <form className=" w-2/5">
                 <div>
                     <label htmlFor="email">Business Website<span className="text-red-600">*</span></label>
-                    <div className="flex justify-between items-center w-full border-2 rounded-md py-3 px-4 my-2 h-14 text-zinc-400">
-                        <p>Payshiga Technologies</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99983 2.27672C4.75262 2.27672 3.74156 3.28778 3.74156 4.53499V5.99809H8.2581V4.53499C8.2581 3.28778 7.24704 2.27672 5.99983 2.27672ZM9.78482 6.00273V4.53499C9.78482 2.4446 8.09022 0.75 5.99983 0.75C3.90944 0.75 2.21484 2.4446 2.21484 4.53499V6.00273C1.32567 6.06784 0.624512 6.80986 0.624512 7.71565V11.5324C0.624512 12.481 1.39349 13.25 2.34207 13.25H9.65759C10.6062 13.25 11.3751 12.481 11.3751 11.5324V7.71565C11.3751 6.80986 10.674 6.06784 9.78482 6.00273Z" fill="#99999C"/>
-                        </svg>
+                    <div className="flex justify-between items-center w-full border-2 rounded-md h-10">
+                        <p className="flex items-center px-1 bg-zinc-50 border-r-2 h-full text-[#99999C]">http://</p>
+                        <input
+                         className="border-none"
+                         placeholder="e.g abc.xyz"
+                         type="text"
+                         alt="" />
                     </div>
                 </div>
                 <div className="flex">
@@ -62,7 +64,8 @@ const BusinessInfo = () => {
                          placeholder="Search address" />
                     </div>
                     <div>
-                        <label></label>
+                        <label>Tell us about your business <span className="text-red-600">*</span></label>
+                        <textarea cols="30" rows="2" placeholder="What does your business do?"></textarea>
                     </div>
                     
                 </div>

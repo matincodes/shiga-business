@@ -69,8 +69,9 @@ input[type=number],
 input[type=password],
 input[type=email],
 input[type=tel],
+input[type=date],
 textarea{
-  @apply  w-full border-2 rounded-md p-2 my-2 text-sm placeholder:text-[#CCCCCC] outline-none;
+  @apply  w-full border-2 rounded-md p-2 my-2 text-sm placeholder:text-[#CCCCCC] placeholder:text-sm outline-none;
 }
 
 .link{
@@ -78,7 +79,7 @@ textarea{
 }
 
 label{
-  @apply block w-full pt-1 text-xs;
+  @apply block w-full pt-1 text-xs font-[ShigaWeb];
 }
 
 .set-up ul li{
