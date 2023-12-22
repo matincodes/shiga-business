@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as Shiga } from "../../assets/shiga-logo.svg";
+import Footer from "../../components/footer/footer";
+import ConfirmUrl from "../../components/confirm-url/confirm-url";
 
 const Login = () => {
-
-    const terms = "https://payshiga.notion.site/PAYSHIGA-TERMS-OF-USE-c14e881663ec40c7875e61ff0eebc40b?pvs=4";
-    const privacy = "https://payshiga.notion.site/PAYSHIGA-PRIVACY-POLICY-6165bd6474ad4297a2227a0f7c061a7b?pvs=4";
 
     const contactSupport = () => {
         window.location.href = "mailto:business@payshiga.com"
@@ -12,22 +11,7 @@ const Login = () => {
     return ( 
         <div className=" flex flex-col justify-between h-screen font-[ShigaWeb]">
             <header>
-                <div className="flex justify-between items-center h-8 bg-[#625BF6]">
-                    <div></div>
-                    <div className="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M15 8C15 11.866 11.866 15 8 15M15 8C15 4.13401 11.866 1 8 1M15 8H1M8 15C4.13401 15 1 11.866 1 8M8 15C4.068 11.7153 4.02347 4.33714 8 1M8 15C11.9522 11.6641 12.0146 4.33796 8 1M1 8C1 4.13401 4.13401 1 8 1" stroke="white" stroke-width="1.2"/>
-                        </svg>
-                        <p className="text-white text-sm px-1">
-                            Confirm if this URL is https://business.payshiga.com
-                        </p>
-                    </div>
-                    <div className="flex justify-end items-center pr-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                            <path d="M1.75729 1.75736L10.2426 10.2426M1.75729 10.2426L10.2426 1.75736" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                        </svg> 
-                    </div>
-                </div>
+                <ConfirmUrl/>
                 <nav className="flex justify-between p-3 h-1/7 border">
                     <Shiga />
                     <p className="flex items-center justify-center text-xs">
@@ -72,12 +56,7 @@ const Login = () => {
                     <button className="text-sm">Log in</button>
                 </form>
             </div>
-            <footer className="flex flex-col items-center text-sm pb-10">
-                <p>
-                    <Link to={terms}>Terms of Service</Link>・<Link to={privacy}>Privacy Policy</Link> 
-                </p>
-                <p className="text-[#99999C]">© 2024 Payshiga Technologies.</p>
-            </footer>
+            <Footer/>
         </div>
      );
 }

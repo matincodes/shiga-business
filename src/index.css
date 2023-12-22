@@ -83,5 +83,9 @@ label{
 }
 
 .set-up ul li{
-  @apply text-[10px] text-[#99999C] py-1;
+  @apply flex items-start text-[10px] text-[#99999C] py-1;
+}
+
+.set-up ul li img{
+  @apply py-1;
 }
